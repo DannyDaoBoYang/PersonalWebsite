@@ -6,17 +6,6 @@
     <title>Dao Bo Yang's Website</title>
 
     <!-- update the version number as needed -->
-    <script defer src="/__/firebase/8.2.1/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/8.2.1/firebase-auth.js"></script>
-    <script defer src="/__/firebase/8.2.1/firebase-database.js"></script>
-    <script defer src="/__/firebase/8.2.1/firebase-firestore.js"></script>
-    <script defer src="/__/firebase/8.2.1/firebase-functions.js"></script>
-    <script defer src="/__/firebase/8.2.1/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/8.2.1/firebase-storage.js"></script>
-    <script defer src="/__/firebase/8.2.1/firebase-analytics.js"></script>
-    <script defer src="/__/firebase/8.2.1/firebase-remote-config.js"></script>
-    <script defer src="/__/firebase/8.2.1/firebase-performance.js"></script>
     <!-- 
       initialize the SDK after all desired features are loaded, set useEmulator to false
       to avoid connecting the SDK to running emulators.
@@ -36,10 +25,10 @@
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto" id="mainNav">
-            <li class="nav-item"><a class="nav-link" href="#top" class="scroll-link">About Me</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" class="scroll-link">About Me</a></li>
             <li class="nav-item"><a class="nav-link"href="#skills" class="scroll-link">Skills</a></li>
             <li class="nav-item"><a class="nav-link" href="#experience" class="scroll-link">Experience</a></li>
-            <li class="nav-item"><a class="nav-link" href="#awards" class="scroll-link">Awards</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio" class="scroll-link">Portfolio</a></li>
             <li class="nav-item"><a class="nav-link" href="#contactMe" class="scroll-link">Contact Me</a></li>
           </ul>
         </div>
@@ -50,14 +39,18 @@
     <div class="container">
       <div class="row">
         <!-- item -->
-        <div class="col-md-5 tileBox"> <img class="LeftSideImage"  src="image/Profilepicture.png" alt="me"> </div>
-        <div class="col-md-6 tileBox">
+        <div class="col-md-3 row tileBox"> <img class="LeftSideImage"  src="image/MeandDog.jpg" alt="me"> </div>
+
+        <div class="col-md-5 tileBox">
           <div class="txtHead">
-            <h2>I am Dao Bo Yang,</h2>
+            <h2>I am Dao Bo Yang</h2>
             <h6>2nd Year CS (co-op) student at University of Waterloo</h6>
-            <p>Seeking Summer 2021 intership for a Full Stack Engineering role</p>
+            <p>Seeking Summer 2021 internship for a Full Stack Engineering role</p>
           </div>
-           </div>
+        </div>
+        <div class="col-md-3 tileBox">
+          <img class="LeftSideImage"  src="image/Uwaterloo.svg" alt="me">
+        </div>
         <!-- end: -->
       </div>
     </div>
@@ -106,7 +99,7 @@
         <b>Full Stack Engineer at Caribou Contest Incorporation</b> <br/>
         <p>September 2020 - Dec 2020, 4 month, co-op </p>
         <a href="https://cariboutests.com">Link to Website</a>  <br/>
-        <a href="https://cariboutests.com/games/hackenbush.php">Link to my part</a>
+        <a href="https://cariboutests.com/games/hackenbush.php">Link to my main project at work</a>
       </div>
       </div>
       </div>
@@ -123,6 +116,19 @@
       </div>
     </div>
   </section>
+  <section id="portfolio">
+    <div class="container">
+      <h2>
+        Projects
+      </h2>
+      <ul>
+        <li>Grab the square. Mobile Game Built with Unity. <a href="https://play.google.com/store/apps/details?id=grab.danny.danny">Published on Google Play.</a></li>
+        <li>Automatic Email Collector</li>
+        <li>Interactive Game Hackenbush</li>
+        <li>This Website.</li>
+      </ul>
+    </div>
+  </section>
   <footer class="footer">
     <div class="container">
       <nav class="navbar  fixed-bottom navbar-expand-lg navbar-light bg-light" role="navigation">
@@ -131,8 +137,11 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav mr-2">
-            <li class="nav-item">Personal Email: daobo.yang41@gmail.com&nbsp;</li>
-            <li class="nav-item">&nbsp;Phone: 1-289-300-0765&nbsp;</li>
+            <li class="nav-item"> <b>Personal Email:</b> daobo.yang41@gmail.com&nbsp;</li>
+            <li class="nav-item"> <b>School Email:</b> dbyang@uwaterloo.ca&nbsp;</li>
+            <li class="nav-item">&nbsp;<b>Phone:</b> 1-289-300-0765&nbsp;</li>
+            <li class="nav-item"><a href = "https://github.com/DannyDaoBoYang"><img class="logocontactimage" src="./image/github.png"></a></li>
+            <li class="nav-item"><a href = "https://www.linkedin.com/in/dao-bo-yang-1ba20713a/"><img class="logocontactimage" src="./image/linkdin.webp"></a></li>
           </ul>
         </div>
       </nav>

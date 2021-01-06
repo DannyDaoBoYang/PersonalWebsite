@@ -3,10 +3,14 @@ body{
     padding-bottom:60px;
 }
 .LeftSideImage{
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
 }
 .LeftSideImage2{
     width: 200px;
     height: 66px;
+}
+.logocontactimage{
+    width: 25px;
+    height: 25px;
 }
