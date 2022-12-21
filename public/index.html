@@ -1,173 +1,192 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dao Bo Yang's Website</title>
-
-    <!-- update the version number as needed -->
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/Mycss.css">
-
-  </head>
-  <body>
-  <header class="header">
-    <div class="container">
-      <nav class="navbar  fixed-top navbar-expand-lg navbar-light bg-light" role="navigation">
-        <div class="navbar-header">
-          <a href="#" class="navbar-brand"><b>Dao Bo Yang</b></a>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto" id="mainNav">
-            <li class="nav-item"><a class="nav-link" href="#" class="scroll-link">About Me</a></li>
-            <li class="nav-item"><a class="nav-link"href="#skills" class="scroll-link">Skills</a></li>
-            <li class="nav-item"><a class="nav-link" href="#experience" class="scroll-link">Experience</a></li>
-            <li class="nav-item"><a class="nav-link" href="#portfolio" class="scroll-link">Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contactMe" class="scroll-link">Contact Me</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
-  <section id="aboutUs">
-    <div class="container">
-      <div class="row">
-        <!-- item -->
-        <div class="col-md-3 row tileBox"> <img class="LeftSideImage"  src="image/MeandDog.jpg" alt="me"> </div>
-
-        <div class="col-md-5 tileBox">
-          <div class="txtHead">
-            <h2>I am Dao Bo Yang</h2>
-            <h6>2nd Year CS (co-op) student at University of Waterloo</h6>
-            <p>Seeking Summer 2021 internship for a Full Stack Engineering role</p>
-          </div>
-        </div>
-        <div class="col-md-3 tileBox">
-          <img class="LeftSideImage"  src="image/Uwaterloo.svg" alt="me">
-        </div>
-        <!-- end: -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dao Bo Yang's Website</title>
+  <!-- update the version number as needed -->
+  <!--
+     initialize the SDK after all desired features are loaded, set useEmulator to false
+     to avoid connecting the SDK to running emulators.
+     -->
+  <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/Mycss.css">
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <nav class="navbar  fixed-top navbar-expand-lg navbar-light bg-light" role="navigation">
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand"><b>Dao Bo Yang</b></a>
       </div>
-    </div>
-  </section>
-
-  <section id="skills">
-
-    <div class="container" style="background-color:lightblue;">
-      <div class="col-md-5 tilebox"><h2>My Skills</h2></div>
-      <h4>Web related Skills</h4>
-      <div class="row">
-          <ul>
-            <li>Backend: PHP, Flask </li>
-            <li>Database: MySQL</li>
-            <li>Frontend: HTML,CSS,Javascript, React, jQuery, Bootstrap</li>
-            <li>Used: Ajax request, RESTful API, WebSocket</li>
-            <li>Scripting: Python, Bash(Linux Environment)</li>
-          </ul>
-      </div>
-      <h4>Software Development Related Languages</h4>
-      <div class="row">
-        <ul>
-          <li>C, C++, C#, Java</li>
-          <li>UW course CS 145: Design Functional Program(Enriched)</li>
-          <li>UW course CS 146: Elementary Data Structures and Data Abstruction(Enriched) </li>
-          <li>UW course CS 245: Logics and Computation</li>
-          <li>UW course CS 246: Object Oriented Software Development</li>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto" id="mainNav">
+          <li class="nav-item"><a class="nav-link" href="#" class="scroll-link">About Me</a></li>
+          <li class="nav-item"><a class="nav-link"href="#skills" class="scroll-link">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience" class="scroll-link">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio" class="scroll-link">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contactMe" class="scroll-link">Contact Me</a></li>
         </ul>
       </div>
-      <h4>Quality Assurance related tools:</h4>
-      <div class="row">
-        <ul>
-          <li>Junit, Jasmine</li>
-        </ul>
-      </div>
-      <h4>Other Skills</h4>
-      <div class="row">
-        <ul>
-          <li>Microsoft Excel</li>
-          <li>Microsoft Macros</li>
-          <li>BurpSuit, nmp</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <section id="experience">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-5 tileBox"></div>
-        <div class="col-md-5 tilebox"><h2>Work Experience</h2></div>
-      </div>
-      <div class="row">
-        <div class="col-md-5 tileBox"> <a href="https://cariboutests.com"><img class="LeftSideImage2" src="image/cariboutimage.png"></a> </div>
-        <div class="col-md-5 tilebox">
-      <div>
-        <b>Full Stack Engineer at Caribou Contest Incorporation</b> <br/>
-        <p>September 2020 - Dec 2020, 4 month, co-op </p>
-        <a href="https://cariboutests.com">Link to Website</a>  <br/>
-        <a href="https://cariboutests.com/games/hackenbush.php">Link to my main project at work</a>
-      </div>
-      </div>
-      </div>
-      <br/>
-      <br/>
-      <div class="row">
-        <div class="col-md-5 tileBox"> <a href="https://cariboutests.com"><img  src="image/macmaster.png"></a> </div>
-        <div class="col-md-5 tilebox">
-          <div>
-            <b>Junior Statistician at The Centre for Evidence-Based Orthopaedics</b> <br/>
-            <p>July 2019 - August 2019, 2 month, Full-time </p>
-          </div>
+    </nav>
+  </div>
+</header>
+<section id="aboutUs">
+  <div class="container">
+    <div class="row">
+      <!-- item -->
+      <div class="col-md-3 row tileBox"> <img class="LeftSideImage"  src="image/MeandDog.jpg" alt="me"> </div>
+      <div class="col-md-5 tileBox">
+        <div class="txtHead">
+          <h2>I am Dao Bo Yang</h2>
+          <h6>3rd Year CS (co-op) student at University of Waterloo</h6>
+          <p>Seeking Winter 2022 internship for a Full Stack Engineering role</p>
         </div>
       </div>
+      <div class="col-md-3 tileBox">
+        <img class="LeftSideImage"  src="image/Uwaterloo.svg" alt="me">
+      </div>
+      <!-- end: -->
     </div>
-  </section>
-  <section id="portfolio">
-    <div class="container" style="background-color:lightblue;">
-      <h2>
-        Selected Projects
-      </h2>
+  </div>
+</section>
+<section id="skills">
+  <div class="container" style="background-color:lightblue;">
+    <div class="col-md-5 tilebox">
+      <h2>My Skills</h2>
+    </div>
+    <h4>Web related Skills</h4>
+    <div class="row">
       <ul>
-        <li>Grab the square. Mobile Game Built with Unity. <a href="https://play.google.com/store/apps/details?id=grab.danny.danny">Published on Google Play.</a></li>
-        <li>Automatic Email Collector <a href="https://github.com/DannyDaoBoYang/Email-Collector">Link to scripts</a></li>
-        <li>Interactive Game Hackenbush (Co-op project) <a href="https://cariboutests.com/games/hackenbush.php">Published on Caribooutests.com</a> </li>
-        <li>This Website.</li>
+        <li>Backend: PHP, Flask </li>
+        <li>Database: MySQL, Cassandra SQL</li>
+        <li>Frontend: HTML,CSS,Javascript, React, jQuery, Bootstrap</li>
+        <li>Used: Ajax request, RESTful API, WebSocket</li>
+        <li>Scripting: Python, Bash(Linux Environment)</li>
       </ul>
     </div>
-  </section>
-  <footer class="footer">
-    <div class="container">
-      <nav class="navbar  fixed-bottom navbar-expand-lg navbar-light bg-light" role="navigation">
-        <div class="navbar-header">
-          <a href="#" class="navbar-brand"><b>Dao Bo Yang</b></a>
-        </div>
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav mr-2">
-            <li class="nav-item"> <b>Personal Email:</b> daobo.yang41@gmail.com&nbsp;</li>
-            <li class="nav-item"> <b>School Email:</b> dbyang@uwaterloo.ca&nbsp;</li>
-            <li class="nav-item">&nbsp;<b>Phone:</b> 1-289-300-0765&nbsp;</li>
-            <li class="nav-item"><a href = "https://github.com/DannyDaoBoYang"><img class="logocontactimage" src="./image/github.png"></a></li>
-            <li class="nav-item"><a href = "https://www.linkedin.com/in/dao-bo-yang-1ba20713a/"><img class="logocontactimage" src="./image/linkdin.webp"></a></li>
-          </ul>
-        </div>
-      </nav>
+    <h4>Software Development Related Languages</h4>
+    <div class="row">
+      <ul>
+        <li>C, C++, C#, Java</li>
+        <li>UW course CS 145: Design Functional Program(Enriched)</li>
+        <li>UW course CS 146: Elementary Data Structures and Data Abstruction(Enriched) </li>
+        <li>UW course CS 245: Logics and Computation</li>
+        <li>UW course CS 246: Object Oriented Software Development</li>
+        <li>UW course CS 341: Algorithms</li>
+        <li>UW course CS 349: User Interfaces</li>
+        <li>UW course CS 350: Operating System</li>
+      </ul>
     </div>
-  </footer>
-
-
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="/__/firebase/8.2.1/firebase-app.js"></script>
-
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-       https://firebase.google.com/docs/web/setup#available-libraries -->
-  <script src="/__/firebase/8.2.1/firebase-analytics.js"></script>
-
-  <!-- Initialize Firebase -->
-  <script src="/__/firebase/init.js"></script>
-
-  </body>
+    <h4>Quality Assurance related tools:</h4>
+    <div class="row">
+      <ul>
+        <li>Junit, Jasmine, Pytest</li>
+      </ul>
+    </div>
+    <h4>Other Skills</h4>
+    <div class="row">
+      <ul>
+        <li>Microsoft Excel</li>
+        <li>Microsoft Macros</li>
+        <li>BurpSuit, nmp</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section id="experience">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 tileBox"></div>
+      <div class="col-md-5 tilebox">
+        <h2>Work Experience</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-5 tileBox"> <a href="https://www.vitalimages.com/"><img class="LeftSideImage2" src="image/Vital.jpg"></a> </div>
+      <div class="col-md-5 tilebox">
+        <div>
+          <b>Quality Assurance Engineer at  Cannon Medical Healthcare Information Technology Division</b> <br/>
+          <p>May 2021 - August 2021, 4 month, co-op </p>
+        </div>
+      </div>
+    </div>
+    <br/>
+    <br/>
+    <div class="row">
+      <div class="col-md-5 tileBox"> <a href="https://uwaterloo.ca/"><img class="LeftSideImage2" src="image/Uwaterloo.svg"></a> </div>
+      <div class="col-md-5 tilebox">
+        <div>
+          <b>Math 138 Marking Assistant at University of Waterloo</b> <br/>
+          <p>September 2020 - Dec 2020, 4 month, contract </p>
+        </div>
+      </div>
+    </div>
+    <br/>
+    <br/>
+    <div class="row">
+      <div class="col-md-5 tileBox"> <a href="https://cariboutests.com"><img class="LeftSideImage2" src="image/cariboutimage.png"></a> </div>
+      <div class="col-md-5 tilebox">
+        <div>
+          <b>Full Stack Engineer at Caribou Contest Incorporation</b> <br/>
+          <p>September 2020 - Dec 2020, 4 month, co-op </p>
+          <a href="https://cariboutests.com">Link to Website</a>  <br/>
+          <a href="https://cariboutests.com/games/hackenbush.php">Link to my main project at work</a>
+        </div>
+      </div>
+    </div>
+    <br/>
+    <br/>
+    <div class="row">
+      <div class="col-md-5 tileBox"> <a href="https://cariboutests.com"><img  src="image/macmaster.png"></a> </div>
+      <div class="col-md-5 tilebox">
+        <div>
+          <b>Junior Statistician at The Centre for Evidence-Based Orthopaedics</b> <br/>
+          <p>July 2019 - August 2019, 2 month, Full-time </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="portfolio">
+  <div class="container" style="background-color:lightblue;">
+    <h2>
+      Selected Projects
+    </h2>
+    <ul>
+      <li>Grab the square. Mobile Game Built with Unity. <a href="https://play.google.com/store/apps/details?id=grab.danny.danny">Published on Google Play.</a></li>
+      <li>Automatic Email Collector <a href="https://github.com/DannyDaoBoYang/Email-Collector">Link to scripts</a></li>
+      <li>Interactive Game Hackenbush (Co-op project) <a href="https://cariboutests.com/games/hackenbush.php">Published on Caribooutests.com</a> </li>
+      <li>This Website.</li>
+    </ul>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container">
+    <nav class="navbar  fixed-bottom navbar-expand-lg navbar-light bg-light" role="navigation">
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand"><b>Dao Bo Yang</b></a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-2">
+          <li class="nav-item"> <b>Personal Email:</b> daobo.yang41@gmail.com&nbsp;</li>
+          <li class="nav-item"> <b>School Email:</b> dbyang@uwaterloo.ca&nbsp;</li>
+          <li class="nav-item">&nbsp;<b>Phone:</b> 1-289-300-0765&nbsp;</li>
+          <li class="nav-item"><a href = "https://github.com/DannyDaoBoYang"><img class="logocontactimage" src="./image/github.png"></a></li>
+          <li class="nav-item"><a href = "https://www.linkedin.com/in/dao-bo-yang-1ba20713a/"><img class="logocontactimage" src="./image/linkdin.webp"></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</footer>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.2.1/firebase-app.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+   https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.2.1/firebase-analytics.js"></script>
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+</body>
 </html>
