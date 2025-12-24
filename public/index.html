@@ -1,247 +1,222 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dao Bo Yang's Website</title>
-  <!-- update the version number as needed -->
-  <!--
-     initialize the SDK after all desired features are loaded, set useEmulator to false
-     to avoid connecting the SDK to running emulators.
-     -->
+  <title>Dao Bo Yang | Software Engineer & M.Math Student</title>
   <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./css/Mycss.css">
+  <style>
+    body { padding-top: 70px; } /* Prevents navbar overlap */
+    .skill-category { margin-bottom: 20px; }
+    .project-card { border-left: 5px solid #add8e6; padding-left: 15px; margin-bottom: 20px; }
+    .exp-logo { max-width: 150px; height: auto; margin-bottom: 10px; }
+  </style>
 </head>
 <body>
+
 <header class="header">
-  <div class="container">
-    <nav class="navbar  fixed-top navbar-expand-lg navbar-light bg-light" role="navigation">
-      <div class="navbar-header">
-        <a href="#" class="navbar-brand"><b>Dao Bo Yang</b></a>
-      </div>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto" id="mainNav">
-          <li class="nav-item"><a class="nav-link" href="#" class="scroll-link">About Me</a></li>
-          <li class="nav-item"><a class="nav-link"href="#skills" class="scroll-link">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experience" class="scroll-link">Experience</a></li>
-          <li class="nav-item"><a class="nav-link" href="#portfolio" class="scroll-link">Portfolio</a></li>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a href="#" class="navbar-brand"><b>Dao Bo Yang</b></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#aboutUs">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
         </ul>
       </div>
-    </nav>
-  </div>
+    </div>
+  </nav>
 </header>
-<section id="aboutUs">
+
+<section id="aboutUs" class="py-5">
   <div class="container">
-    <div class="row">
-      <!-- item -->
-      <div class="col-md-3 row tileBox"> <img class="LeftSideImage"  src="image/MeandDog.jpg" alt="me"> </div>
-      <div class="col-md-5 tileBox">
-        <div class="txtHead">
-          <h2>I am Dao Bo Yang</h2>
-          <h6>4th Year CS (co-op) student at University of Waterloo</h6>
-          <p> Incomming M.Math in CS at University of Waterloo starting Spring 2024. I will be jointly supervised by Professors Richard Trefler and Arie Gurfinkel.  </p>
-        </div>
+    <div class="row align-items-center">
+      <div class="col-md-3 text-center">
+        <img class="img-fluid rounded-circle mb-3" src="image/MeandDog.jpg" alt="Dao Bo Yang">
       </div>
-      <div class="col-md-3 tileBox">
-        <img class="LeftSideImage"  src="image/Uwaterloo.svg" alt="me">
+      <div class="col-md-6">
+        <h2>I am Dao Bo Yang</h2>
+        <h6 class="text-muted">M.Math in CS Candidate at University of Waterloo (Spring 2024)</h6>
+        <p>I am currently a 4th-year CS (co-op) student at the University of Waterloo. I will be pursuing my Master's under the joint supervision of Professors <b>Richard Trefler</b> and <b>Arie Gurfinkel</b>, focusing on Computer Science research and advanced software systems.</p>
       </div>
-      <!-- end: -->
+      <div class="col-md-3 text-center">
+        <img class="img-fluid" src="image/Uwaterloo.svg" alt="UWaterloo Logo" style="max-height: 100px;">
+      </div>
     </div>
   </div>
 </section>
-<section id="skills">
-  <div class="container" style="background-color:lightblue;">
-    <div class="col-md-5 tilebox">
-      <h2>My Skills</h2>
-    </div>
-    <h4>Web related Skills</h4>
-    <div class="row">
-      <ul>
-        <li>Backend: Python Chalice, C#, PHP, Flask, Java</li>
-        <li>Database: MySQL, Cassandra SQL, DynamoDB</li>
-        <li>Frontend: React.js, Vue.js, HTML,CSS,Javascript, React, jQuery</li>
-        <li>Scripting: Python, Bash(Linux Environment)</li>
-        <li>Academic/Research: C, C++</li>
-      </ul>
-    </div>
-    <h4>Software Development Related Languages</h4>
-    <div class="row">
-      <ul>
-          <li>UW course CS 145: Design Functional Program(Enriched)</li>
-          <li>UW course CS 146: Elementary Data Structures and Data Abstruction(Enriched) </li>
-          <li>UW course CS 245: Logics and Computation</li>
-          <li>UW course CS 246: Object Oriented Software Development</li>
-          <li>UW course CS 341: Algorithms</li>
-          <li>UW course CS 349: User Interfaces</li>
-          <li>UW course CS 350: Operating System</li>
-          <li>UW course CS 370: Numerical Computations</li>
-          <li>UW course CS 458: Privacy and Security in Computing</li>
-          <li>UW course CS 480: Introduction to Machine Learning</li>
-          <li>UW course CS 456: Computer Networking</li>
-          <li>UW course CS 486: Introduction to Artificial Intelligence</li>
-          <li>UW course CS 467: Quantum Information Processing</li>
-      </ul>
-    </div>
-    <h4>Quality Assurance related tools:</h4>
-    <div class="row">
-      <ul>
-        <li>Junit, Jasmine, Pytest</li>
-      </ul>
-    </div>
-    <h4>Other Skills</h4>
-    <div class="row">
-      <ul>
-        <li>Microsoft Excel</li>
-        <li>Microsoft Macros</li>
-        <li>BurpSuit, nmp</li>
-      </ul>
-    </div>
-  </div>
-</section>
-<section id="experience">
+
+<section id="skills" class="py-5" style="background-color: #f8f9fa;">
   <div class="container">
+    <h2 class="mb-4">Technical Skills</h2>
     <div class="row">
-      <div class="col-md-5 tileBox"></div>
-      <div class="col-md-5 tilebox">
-        <h2>Work Experience</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-5 tileBox"> <a href="https://www.huawei.com/ca/"><img class="LeftSideImage2" src="image/huawei.jpg"></a> </div>
-      <div class="col-md-5 tilebox">
-        <div>
-          <b>Software Engineer at Huawei Canada, Markham IC Lab </b> <br/>
-          <p>Sept 2023 - Dec 2023, 4 month, co-op </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-5 tileBox"> <a href="https://www.d2l.com/"><img class="LeftSideImage2" src="image/D2L.jpg"></a> </div>
-      <div class="col-md-5 tilebox">
-        <div>
-          <b>Software Engineer at D2L</b> <br/>
-          <p>May 2023 - August 2023, 4 month, co-op </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-5 tileBox"> <a href="https://www.uplift.com/en-ca/homepage/"><img class="LeftSideImage2" src="image/Uplift-Logo.png"></a> </div>
-      <div class="col-md-5 tilebox">
-        <div>
-          <b>Software Engineer (Capital) at Uplift Inc</b> <br/>
-          <p>Sept 2022 - Dec 2022, 4 month, co-op </p>
-        </div>
-      </div>
-    </div>
-    <br/>
-    <br/>
-    <div class="row">
-      <div class="col-md-5 tileBox"> <a href="https://cs.uwaterloo.ca/~mkarsten/"><img class="LeftSideImage2" src="image/Uwaterloo.svg"></a> </div>
-      <div class="col-md-5 tilebox">
-        <div>
-          <b>URA at University of Waterloo supervised by Martin Karsten</b> <br/>
-          <p>May 2022 - August 2022, 4 month, part-time contract</p>
-        </div>
-      </div>
-    </div>
-    <br/>
-    <br/>
-    <div class="row">
-      <div class="col-md-5 tileBox"> <a href="https://www.uplift.com/en-ca/homepage/"><img class="LeftSideImage2" src="image/Uplift-Logo.png"></a> </div>
-      <div class="col-md-5 tilebox">
-        <div>
-          <b>Software Engineer (Servicing) at Uplift Inc</b> <br/>
-          <p>Jan 2022 - April 2022, 4 month, co-op </p>
-        </div>
-      </div>
-    </div>
-    <br/>
-    <br/>
-    <div class="row">
-      <div class="col-md-5 tileBox"> <a href="https://www.vitalimages.com/"><img class="LeftSideImage2" src="image/Vital.jpg"></a> </div>
-      <div class="col-md-5 tilebox">
-        <div>
-          <b>Quality Assurance Engineer at  Cannon Medical Healthcare Information Technology Division</b> <br/>
-          <p>May 2021 - August 2021, 4 month, co-op </p>
-        </div>
-      </div>
-    </div>
-    <br/>
-    <br/>
-    <div class="row">
-      <div class="col-md-5 tileBox"> <a href="https://uwaterloo.ca/"><img class="LeftSideImage2" src="image/Uwaterloo.svg"></a> </div>
-      <div class="col-md-5 tilebox">
-        <div>
-          <b>Math 138 Marking Assistant at University of Waterloo</b> <br/>
-          <p>September 2020 - Dec 2020, 4 month, contract </p>
-        </div>
-      </div>
-    </div>
-    <br/>
-    <br/>
-    <div class="row">
-      <div class="col-md-5 tileBox"> <a href="https://cariboutests.com"><img class="LeftSideImage2" src="image/cariboutimage.png"></a> </div>
-      <div class="col-md-5 tilebox">
-        <div>
-          <b>Full Stack Engineer at Caribou Contest Incorporation</b> <br/>
-          <p>September 2020 - Dec 2020, 4 month, co-op </p>
-          <a href="https://cariboutests.com">Link to Website</a>  <br/>
-          <a href="https://cariboutests.com/games/hackenbush.php">Link to my main project at work</a>
-        </div>
-      </div>
-    </div>
-    <br/>
-    <br/>
-    <div class="row">
-      <div class="col-md-5 tileBox"> <a href="https://cariboutests.com"><img  src="image/macmaster.png"></a> </div>
-      <div class="col-md-5 tilebox">
-        <div>
-          <b>Junior Statistician at The Centre for Evidence-Based Orthopaedics</b> <br/>
-          <p>July 2019 - August 2019, 2 month, sort of volunteer-fulltime (non-paid but I still worked 8 fucking hours a day)</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="portfolio">
-  <div class="container" style="background-color:lightblue;">
-    <h2>
-      Selected Projects
-    </h2>
-    <ul>
-      <li>Grab the square. Mobile Game Built with Unity. <a href="https://play.google.com/store/apps/details?id=grab.danny.danny">Published on Google Play.</a></li>
-      <li>Automatic Email Collector <a href="https://github.com/DannyDaoBoYang/Email-Collector">Link to scripts</a></li>
-      <li>Interactive Game Hackenbush (Co-op project) <a href="https://cariboutests.com/games/hackenbush.php">Published on Caribooutests.com</a> </li>
-      <li>This Website.</li>
-    </ul>
-  </div>
-</section>
-<footer class="footer">
-  <div class="container">
-    <nav class="navbar  fixed-bottom navbar-expand-lg navbar-light bg-light" role="navigation">
-      <div class="navbar-header">
-        <a href="#" class="navbar-brand"><b>Dao Bo Yang</b></a>
-      </div>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav mr-2">
-          <li class="nav-item"> <b>Personal Email:</b> daobo.yang41@gmail.com&nbsp;</li>
-          <li class="nav-item"> <b>School Email:</b> dbyang@uwaterloo.ca&nbsp;</li>
-          <li class="nav-item">&nbsp;<b>Phone:</b> 1-289-300-0765&nbsp;</li>
-          <li class="nav-item"><a href = "https://github.com/DannyDaoBoYang"><img class="logocontactimage" src="./image/github.png"></a></li>
-          <li class="nav-item"><a href = "https://www.linkedin.com/in/dao-bo-yang-1ba20713a/"><img class="logocontactimage" src="./image/linkdin.webp"></a></li>
+      <div class="col-md-6 skill-category">
+        <h5>Development & Data</h5>
+        <ul>
+          <li><b>Backend:</b> Python (Chalice, Flask), C#, PHP, Java</li>
+          <li><b>Database:</b> MySQL, Cassandra SQL, DynamoDB</li>
+          <li><b>Frontend:</b> React.js, Vue.js, jQuery, HTML5/CSS3</li>
+          <li><b>Systems/Research:</b> C, C++, Bash (Linux)</li>
         </ul>
       </div>
-    </nav>
+      <div class="col-md-6 skill-category">
+        <h5>Tools & Specialized</h5>
+        <ul>
+          <li><b>QA:</b> JUnit, Jasmine, Pytest</li>
+          <li><b>Security:</b> Burp Suite, Nmap</li>
+          <li><b>Other:</b> Unity, Microsoft Excel/Macros</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-3">
+      <h5>Relevant Coursework (UW)</h5>
+      <p class="small text-muted">Functional Programming, Data Structures, Logic & Computation, OOP, Algorithms, UI, Operating Systems, Machine Learning, Networking, AI, and Quantum Information Processing.</p>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="py-5">
+  <div class="container">
+    <h2 class="mb-5 text-center">Work Experience</h2>
+    
+    <div class="row mb-4">
+      <div class="col-md-3 text-center">
+        <a href="https://www.huawei.com/ca/"><img src="image/huawei.jpg" class="exp-logo img-fluid" alt="Huawei"></a>
+      </div>
+      <div class="col-md-9">
+        <h5>Software Engineer (Co-op) | Huawei Canada</h5>
+        <p class="text-muted">Sept 2023 - Dec 2023 | Markham IC Lab</p>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-md-3 text-center">
+        <a href="https://www.d2l.com/"><img src="image/D2L.jpg" class="exp-logo img-fluid" alt="D2L"></a>
+      </div>
+      <div class="col-md-9">
+        <h5>Software Engineer (Co-op) | D2L</h5>
+        <p class="text-muted">May 2023 - August 2023</p>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-md-3 text-center">
+        <a href="https://www.uplift.com/"><img src="image/Uplift-Logo.png" class="exp-logo img-fluid" alt="Uplift"></a>
+      </div>
+      <div class="col-md-9">
+        <h5>Software Engineer (Capital) | Uplift Inc</h5>
+        <p class="text-muted">Sept 2022 - Dec 2022</p>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-md-3 text-center">
+        <img src="image/Uwaterloo.svg" class="exp-logo img-fluid" alt="UWaterloo">
+      </div>
+      <div class="col-md-9">
+        <h5>Undergraduate Research Assistant | University of Waterloo</h5>
+        <p class="text-muted">May 2022 - August 2022 | Supervised by Martin Karsten</p>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-md-3 text-center">
+        <img src="image/macmaster.png" class="exp-logo img-fluid" alt="McMaster">
+      </div>
+      <div class="col-md-9">
+        <h5>Junior Statistician | Centre for Evidence-Based Orthopaedics</h5>
+        <p class="text-muted">July 2019 - August 2019</p>
+        <p>Full-time research internship focusing on clinical data analysis and statistical modeling.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio" class="py-5" style="background-color: #e3f2fd;">
+  <div class="container">
+    <h2 class="mb-4 text-center">Featured Projects & Research</h2>
+    
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title text-primary"><i class="fa fa-shield"></i> Formal Verification & Systems</h5>
+            <p class="card-text small text-muted">Active exploration and contributions to static analysis and model checking tools.</p>
+            <ul class="small">
+              <li><b>CBMC & Infer:</b> Working with C Bounded Model Checker and Facebook’s static analyzer.</li>
+              <li><b>Verifast:</b> Researching modular formal verification for C and Java.</li>
+              <li><b>Futex:</b> Low-level systems implementation of Linux fast userspace locking.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title text-success"><i class="fa fa-robot"></i> AI & Intelligent Agents</h5>
+            <p class="card-text small text-muted">Building practical tools using LLMs and traditional AI techniques.</p>
+            <ul class="small">
+              <li><b>AI URL Summary Agent:</b> Python-based agent for automated content digestion.</li>
+              <li><b>CS486 (AI):</b> Implementations of advanced artificial intelligence algorithms.</li>
+              <li><b>CubeSolver:</b> Algorithm-based solver for Rubik's Cube puzzles.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title text-info"><i class="fa fa-code"></i> Engineering & Graphics</h5>
+            <p class="card-text small text-muted">Core CS fundamentals and graphics programming.</p>
+            <ul class="small">
+              <li><b>CS488 (Graphics):</b> Advanced computer graphics and rendering implementations in C.</li>
+              <li><b>Aptos Core:</b> Forked contribution/exploration of Layer 1 blockchain technology (Rust).</li>
+              <li><b>Hackenbush:</b> Mathematical game published on Caribou Contests.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 border-primary shadow-sm" style="border-style: dashed;">
+          <div class="card-body d-flex flex-column justify-content-center align-items-center">
+            <h5>Explore All Projects</h5>
+            <p class="text-center small">Check out 30+ repositories including CS coursework and personal experiments.</p>
+            <a href="https://github.com/DannyDaoBoYang?tab=repositories" target="_blank" class="btn btn-outline-primary mt-2">
+              <i class="fa fa-github"></i> Visit My GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer bg-light py-4 border-top">
+  <div class="container text-center">
+    <p><b>Dao Bo Yang</b> | Waterloo, ON</p>
+    <p>
+      Email: <a href="mailto:daobo.yang41@gmail.com">daobo.yang41@gmail.com</a> | 
+      School: <a href="mailto:dbyang@uwaterloo.ca">dbyang@uwaterloo.ca</a>
+    </p>
+    <div>
+      <a href="https://github.com/DannyDaoBoYang" class="mx-2"><i class="fa fa-github fa-2x"></i></a>
+      <a href="https://www.linkedin.com/in/dao-bo-yang-1ba20713a/" class="mx-2"><i class="fa fa-linkedin fa-2x"></i></a>
+    </div>
   </div>
 </footer>
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="/__/firebase/8.2.1/firebase-app.js"></script>
-<!-- TODO: Add SDKs for Firebase products that you want to use
-   https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="/__/firebase/8.2.1/firebase-analytics.js"></script>
-<!-- Initialize Firebase -->
-<script src="/__/firebase/init.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
