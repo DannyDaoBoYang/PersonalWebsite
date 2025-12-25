@@ -140,64 +140,108 @@
   </div>
 </section>
 
-<section id="portfolio" class="py-5" style="background-color: #e3f2fd;">
+<section id="skills" class="py-5" style="background-color:#f8f9fa;">
   <div class="container">
-    <h2 class="mb-4 text-center">Featured Projects & Research</h2>
+    <div class="row">
+      <div class="col-md-12 mb-4">
+        <h2>Technical Expertise</h2>
+      </div>
+      <div class="col-md-4">
+        <h5 class="text-primary">Formal Verification & Systems</h5>
+        <ul class="list-unstyled">
+          <li>C / C++ / OCaml / Rust</li>
+          <li>Model Checking (CBMC)</li>
+          <li>Static Analysis (Infer, VeriFast)</li>
+          <li>Linux Systems & Futex</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5 class="text-primary">Software & Web</h5>
+        <ul class="list-unstyled">
+          <li>Python (Flask, Chalice)</li>
+          <li>React.js / Vue.js</li>
+          <li>MySQL / Cassandra / DynamoDB</li>
+          <li>C# / Java / PHP</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5 class="text-primary">Advanced Coursework</h5>
+        <p class="small text-muted">Graphics (CS488), Real-time (CS454), Machine Learning (CS480), AI (CS486), Quantum (CS467), Networking (CS456).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio" class="py-5" style="background-color:lightblue;">
+  <div class="container">
+    <h2 class="mb-5">Selected Projects & Research Work</h2>
     
     <div class="row">
       <div class="col-md-6 mb-4">
-        <div class="card h-100 shadow-sm">
+        <div class="card h-100 shadow-sm border-0">
           <div class="card-body">
-            <h5 class="card-title text-primary"><i class="fa fa-shield"></i> Formal Verification & Systems</h5>
-            <p class="card-text small text-muted">Active exploration and contributions to static analysis and model checking tools.</p>
-            <ul class="small">
-              <li><b>CBMC & Infer:</b> Working with C Bounded Model Checker and Facebook’s static analyzer.</li>
-              <li><b>Verifast:</b> Researching modular formal verification for C and Java.</li>
-              <li><b>Futex:</b> Low-level systems implementation of Linux fast userspace locking.</li>
-            </ul>
+            <h5 class="card-title text-success"><i class="fa fa-brain"></i> Intelligent Systems & Machine Learning</h5>
+            <p class="card-text">
+              Implementations of core AI/ML techniques from <b>CS 480</b> and <b>CS 486</b>, including 
+              Deep Learning models, Probabilistic Reasoning, and Constraint Satisfaction Problems.
+            </p>
+            <div class="btn-group flex-wrap">
+              <a href="https://github.com/DannyDaoBoYang/CS486A3" target="_blank" class="btn btn-sm btn-outline-success">Search & Games (AI)</a>
+              <a href="https://github.com/DannyDaoBoYang/CS486A4" target="_blank" class="btn btn-sm btn-outline-secondary">Neural Nets (ML)</a>
+              <a href="https://github.com/DannyDaoBoYang/CubeSolver" target="_blank" class="btn btn-sm btn-outline-secondary">Search Heuristics</a>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="col-md-6 mb-4">
-        <div class="card h-100 shadow-sm">
+        <div class="card h-100 shadow-sm border-0">
           <div class="card-body">
-            <h5 class="card-title text-success"><i class="fa fa-robot"></i> AI & Intelligent Agents</h5>
-            <p class="card-text small text-muted">Building practical tools using LLMs and traditional AI techniques.</p>
-            <ul class="small">
-              <li><b>AI URL Summary Agent:</b> Python-based agent for automated content digestion.</li>
-              <li><b>CS486 (AI):</b> Implementations of advanced artificial intelligence algorithms.</li>
-              <li><b>CubeSolver:</b> Algorithm-based solver for Rubik's Cube puzzles.</li>
-            </ul>
+            <h5 class="card-title text-danger"><i class="fa fa-shield"></i> Formal Verification & Research</h5>
+            <p class="card-text">
+              Specialized in automated reasoning and static analysis. Currently working with the 
+              <b>Aptos Move Prover</b> (Rust) for formal verification of smart contracts, alongside 
+              industry-standard tools for C/Java.
+            </p>
+            <div class="btn-group flex-wrap">
+              <a href="https://github.com/DannyDaoBoYang/aptos-core" target="_blank" class="btn btn-sm btn-outline-danger">Aptos Move Prover</a>
+              <a href="https://github.com/DannyDaoBoYang/cbmc" target="_blank" class="btn btn-sm btn-outline-secondary">CBMC</a>
+              <a href="https://github.com/DannyDaoBoYang/verifast" target="_blank" class="btn btn-sm btn-outline-secondary">VeriFast</a>
+              <a href="https://github.com/DannyDaoBoYang/infer" target="_blank" class="btn btn-sm btn-outline-secondary">Infer</a>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="col-md-6 mb-4">
-        <div class="card h-100 shadow-sm">
+        <div class="card h-100 shadow-sm border-0">
           <div class="card-body">
-            <h5 class="card-title text-info"><i class="fa fa-code"></i> Engineering & Graphics</h5>
-            <p class="card-text small text-muted">Core CS fundamentals and graphics programming.</p>
-            <ul class="small">
-              <li><b>CS488 (Graphics):</b> Advanced computer graphics and rendering implementations in C.</li>
-              <li><b>Aptos Core:</b> Forked contribution/exploration of Layer 1 blockchain technology (Rust).</li>
-              <li><b>Hackenbush:</b> Mathematical game published on Caribou Contests.</li>
-            </ul>
+            <h5 class="card-title text-info"><i class="fa fa-cube"></i> Computer Graphics (CS488)</h5>
+            <p class="card-text">Advanced rendering and modeling project implemented in C during the University of Waterloo Graphics course.</p>
+            <a href="https://github.com/DannyDaoBoYang/CS488" target="_blank" class="btn btn-sm btn-outline-dark">View Project</a>
           </div>
         </div>
       </div>
 
       <div class="col-md-6 mb-4">
-        <div class="card h-100 border-primary shadow-sm" style="border-style: dashed;">
-          <div class="card-body d-flex flex-column justify-content-center align-items-center">
-            <h5>Explore All Projects</h5>
-            <p class="text-center small">Check out 30+ repositories including CS coursework and personal experiments.</p>
-            <a href="https://github.com/DannyDaoBoYang?tab=repositories" target="_blank" class="btn btn-outline-primary mt-2">
-              <i class="fa fa-github"></i> Visit My GitHub
-            </a>
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title text-warning"><i class="fa fa-exchange"></i> Networking & Systems</h5>
+            <p class="card-text">Implementation of reliable data transfer protocols (CS456) and exploration of <b>Futex</b> (Linux locking mechanism).</p>
+            <div class="btn-group">
+              <a href="https://github.com/DannyDaoBoYang/CS456A1" target="_blank" class="btn btn-sm btn-outline-secondary">Networking</a>
+              <a href="https://github.com/DannyDaoBoYang/futex" target="_blank" class="btn btn-sm btn-outline-secondary">Futex</a>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <p>Want to see more? View all 29+ repositories on my GitHub.</p>
+      <a href="https://github.com/DannyDaoBoYang?tab=repositories" target="_blank" class="btn btn-primary btn-lg">
+        <i class="fa fa-github"></i> Visit My Full GitHub Profile
+      </a>
     </div>
   </div>
 </section>
