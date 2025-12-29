@@ -14,3 +14,9 @@ body{
     width: 25px;
     height: 25px;
 }
+.exp-logo {
+    height: 80px !important;
+    width: auto !important;
+    object-fit: contain;
+    max-width: 150px;
+}
